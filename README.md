@@ -1,10 +1,11 @@
-# HebSafeHarbor
+# HebrewAnanoymizer
 
-A de-identification toolkit for clinical text in Hebrew.
+A de-identification toolkit for text in Hebrew.
+This tool is a modified version of the [HebSafeHarbor](https://github.com/8400TheHealthNetwork/HebSafeHarbor). Thanks for Ministry of health Timna team and Microsoft for this tool.
 
 [![MIT license](https://img.shields.io/badge/license-MIT-brightgreen.svg)](http://opensource.org/licenses/MIT) ![Release](https://img.shields.io/github/v/release/8400TheHealthNetwork/HebSafeHarbor.svg) [![PyPI version](https://badge.fury.io/py/hebsafeharbor.svg)](https://badge.fury.io/py/hebsafeharbor) [![Pypi Downloads](https://img.shields.io/pypi/dm/hebsafeharbor.svg)](https://img.shields.io/pypi/dm/hebsafeharbor.svg) 
 
-HebSafeHarbor was developed according to the requirements described in הצעה למתווה התממה של טקסט רפואי - נמל מבטחים (read more [here](docs/))
+
 
 The toolkit integrates and uses open source libraries and assets, including [HebSpacy](https://github.com/8400TheHealthNetwork/HebSpacy) (that runs NER model based on [AlephBERT](https://arxiv.org/pdf/2104.04052.pdf), [Nemo](https://github.com/OnlpLab/NEMO-Corpus) and [BMC](https://www.cs.bgu.ac.il/~elhadad/nlpproj/naama/)), [Presidio](https://microsoft.github.io/presidio/), Wikipedia and public lexicons.
 
@@ -69,6 +70,9 @@ print(output[0].anonymized_text.text)
 
 # > <שם_> התאשפזה ב<יום_>.02.2012 וגרה <מיקום_> 16 רמת גן
 ```
+### Performance
+* Maximum text to be processed length: 
+
 
 ## Docker Compose
 The easiest way to consume HebSafeHarbor as a [service with a REST API](#server)  and [demo application](#demo-application) is through `docker-compose` setup.
